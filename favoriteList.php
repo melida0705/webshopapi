@@ -61,7 +61,7 @@ WHERE favorite.customer_id='{$customer_id}'";
                   
   
 
-
+?>
               
         
 

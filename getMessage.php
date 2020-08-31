@@ -38,7 +38,7 @@ $proba2="SELECT * FROM `messages` WHERE (sender_id='{$customer_id}' or sender_id
     
                   
   
-
+?>
 
               
         

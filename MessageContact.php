@@ -36,4 +36,4 @@ $proba2="SELECT DISTINCT receiver_id FROM `messages` WHERE sender_id='{$customer
     }
     
                   
-  
+  ?>
