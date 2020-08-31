@@ -1,6 +1,4 @@
 <?php
-
-// db credentials
 define('DB_HOST', 'djbinno.com');
 define('DB_USER', 'condosharp');
 define('DB_PASS', 'Miamilakesdj5881');
@@ -21,3 +19,4 @@ function connect()
 }
 
 $con = connect();
+?>
