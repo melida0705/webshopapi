@@ -1,8 +1,8 @@
 <?php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'estore_db');
+define('DB_HOST', 'djbinno.com');
+define('DB_USER', 'condosharp');
+define('DB_PASS', 'Miamilakesdj5881');
+define('DB_NAME', 'webshop');
 
 // Connect with the database.
 function connect()
