@@ -4,22 +4,23 @@
  */
 require 'connect.php';
     
-$categories = [];
-$sql = "SELECT category_id,category_name,category_image FROM category";
+$images = [];
+$sql = "SELECT * FROM image";
 
 if($result = mysqli_query($con,$sql))
 {
   $cr = 0;
   while($row = mysqli_fetch_assoc($result))
   {
-    $categories[$cr]['category_id']    = $row['category_id'];
-    $categories[$cr]['category_name']    = $row['category_name'];
-    $categories[$cr]['category_image']    = $row['category_image'];
+    $images[$cr]['id']    = $row['id'];
+    $images[$cr]['url']    = $row['url'];
+    $images[$cr]['opis']    = $row['opis'];
+    $images[$cr]['lajkovi']    = $row['lajkovi'];
   
     $cr++;
   }
     
-  echo json_encode(['data'=>$categories]);
+  echo json_encode(['data'=>$images]);
 }
 else
 {
