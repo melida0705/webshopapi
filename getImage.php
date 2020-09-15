@@ -10,7 +10,7 @@ if($result = mysqli_query($con,$sql))
   $cr = 0;
   while($row = mysqli_fetch_assoc($result))
   {
-    $image=[$cr]['id'] = $row['d'];
+    $image=[$cr]['id'] = $row['id'];
     $image=[$cr]['url'] = $row['url']; 
     $image=[$cr]['opis'] = $row['opis']; 
     $image=[$cr]['lajkovi'] = $row['lajkovi']; 
