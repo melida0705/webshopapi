@@ -157,6 +157,24 @@
 					$response['message'] = 'Nothing to delete, provide an id please';
 				}
 			break; 
+				case 'deleteimage':
+
+				//for the delete operation we are getting a GET parameter from the url having the id of the record to be deleted
+				if(isset($_GET['id'])){
+					$db = new DbOperation();
+					if($db->deleteImage($_GET['id'])){
+						$response['error'] = false; 
+						$response['message'] = 'Hero deleted successfully';
+						$response['slike'] = $db->getSlike();
+					}else{
+						$response['error'] = true; 
+						$response['message'] = 'Some error occurred please try again';
+					}
+				}else{
+					$response['error'] = true; 
+					$response['message'] = 'Nothing to delete, provide an id please';
+				}
+			break; 
 		}
 		
 	}else{
