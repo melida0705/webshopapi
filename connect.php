@@ -1,10 +1,10 @@
 <?php
 
 // db credentials
-define('DB_HOST', 'djbinno.com');
-define('DB_USER', 'condosharp');
-define('DB_PASS', 'Miamilakesdj5881');
-define('DB_NAME', 'webshop');
+define('DB_HOST', 'sql2.freemysqlhosting.net');
+define('DB_USER', 'sql2368143');
+define('DB_PASS', 'xF2%yL3*');
+define('DB_NAME', 'sql2368143');
 
 // Connect with the database.
 function connect()
