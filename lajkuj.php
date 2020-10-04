@@ -14,7 +14,7 @@ $postdata = file_get_contents("php://input");
   // }
 	
   // Sanitize.
-  $id=mysqli_real_escape_string($con,(int)($request->data->id));
+  $id=mysqli_real_escape_string($con,$_GET['id']);
   
  $lajkovi=5;
  
