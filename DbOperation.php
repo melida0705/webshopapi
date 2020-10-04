@@ -41,7 +41,7 @@ class DbOperation
 
 	function like($id, $likes){
 		$updatedLike = $likes + 1;
-		$stmt = $this->con->prepare("UPDATE images SET lajkovi = ? WHERE id = ?");
+		$stmt = $this->con->prepare("UPDATE image SET lajkovi = ? WHERE id = ?");
 		$stmt->bind_param("ii", $updatedLike, $id);
 		if($stmt->execute())
 			return true; 
