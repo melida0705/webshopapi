@@ -5,7 +5,7 @@
 require 'connect.php';
     
 $images = [];
-$sql = "SELECT * FROM images";
+$sql = "SELECT * FROM image";
 
 if($result = mysqli_query($con,$sql))
 {
