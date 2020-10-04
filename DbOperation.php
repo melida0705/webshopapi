@@ -30,7 +30,7 @@ class DbOperation
 			$slika  = array();
 			$slika['id'] = $id; 
 			$slika['url'] = $url; 
-			$slika['lajkovi'] = lajkovi; 
+			$slika['lajkovi'] = $lajkovi; 
 			$slika['opis'] = $opis; 
 			
 			array_push($slike, $slika); 
