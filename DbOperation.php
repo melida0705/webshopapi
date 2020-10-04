@@ -20,7 +20,7 @@ class DbOperation
 	}
 	
 	function getSlike(){
-		$stmt = $this->con->prepare("SELECT id,url,opis,lajkovi FROM images");
+		$stmt = $this->con->prepare("SELECT id,url,opis,lajkovi FROM image");
 		$stmt->execute();
 		$stmt->bind_result($id, $url, $opis, $lajkovi);
 		
