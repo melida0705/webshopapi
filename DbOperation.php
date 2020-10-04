@@ -111,4 +111,13 @@ class DbOperation
 		
 		return false; 
 	}
+	function deleteImage($id){
+		$stmt = $this->con->prepare("DELETE FROM image WHERE id = ? ");
+		$stmt->bind_param("i", $id);
+		if($stmt->execute())
+			return true; 
+		
+		return false; 
+	}
+	
 }
