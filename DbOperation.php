@@ -20,9 +20,9 @@ class DbOperation
 	}
 	
 	function getSlike(){
-		$stmt = $this->con->prepare("SELECT id, url, brojLajkova, opis FROM slike");
+		$stmt = $this->con->prepare("SELECT * FROM images");
 		$stmt->execute();
-		$stmt->bind_result($id, $url, $brojLajkova, $opis);
+		$stmt->bind_result($id, $url, $opis, $lajkovi);
 		
 		$slike = array(); 
 		
@@ -30,7 +30,7 @@ class DbOperation
 			$slika  = array();
 			$slika['id'] = $id; 
 			$slika['url'] = $url; 
-			$slika['brojLajkova'] = $brojLajkova; 
+			$slika['lajkovi'] = lajkovi; 
 			$slika['opis'] = $opis; 
 			
 			array_push($slike, $slika); 
@@ -41,7 +41,7 @@ class DbOperation
 
 	function like($id, $likes){
 		$updatedLike = $likes + 1;
-		$stmt = $this->con->prepare("UPDATE slike SET brojLajkova = ? WHERE id = ?");
+		$stmt = $this->con->prepare("UPDATE images SET lajkovi = ? WHERE id = ?");
 		$stmt->bind_param("ii", $updatedLike, $id);
 		if($stmt->execute())
 			return true; 
