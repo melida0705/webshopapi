@@ -51,7 +51,7 @@
 				$response['slike'] = $db->getSlike();
 			break; 
 			case 'skocko':
-			
+				$db = new DbOperation();
 				// $response['error'] = false; 
 				$response['message'] = 'Request successfully completed';
 				$response['skocko'] = $db->getSkocko();
