@@ -10,7 +10,8 @@
 			$drugi=rand(1, 6);
 			$treci=rand(1, 6);
 			$cetvrti=rand(1,6);
-			$finalni=$prvi+$drugi+$treci+$cetvrti;
+			
+			$finalni=$prvi.toString()+$drugi.toString()+$treci.toString()+$cetvrti.toString();
 			array_push($skocko,$prvi);
 			array_push($skocko,$drugi);
 			array_push($skocko,$treci);
