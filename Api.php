@@ -133,6 +133,7 @@
 					}else{
 						$response['error'] = true; 
 						$response['message'] = 'Some error occurred please try again';
+						$response['posalto']=$_GET['opis']+" "+ $_GET['lajkovi'];
 					}
 				}else{
 					$response['error'] = true; 
