@@ -125,7 +125,7 @@
 			case 'createimage':
 				//first check the parameters required for this request are available or not 
 				//isTheseParametersAvailable(array('opis','lajkovi'));
-				if(isset($_GET['opis'])){
+				
 					$db = new DbOperation();
 					if($db->createImage($_GET['opis'], $_GET['lajkovi'])){
 						$response['error'] = false; 
@@ -133,12 +133,9 @@
 					}else{
 						$response['error'] = true; 
 						$response['message'] = 'Some error occurred please try again';
-						$response['posalto']=$_GET['opis']+" "+ $_GET['lajkovi'];
+						$response['posalto']= $_GET['opis'];
 					}
-				}else{
-					$response['error'] = true; 
-					$response['message'] = 'Nothing to delete, provide an id please';
-				}
+				
 				//creating a new dboperation object
 // 				$db = new DbOperation();
 				
