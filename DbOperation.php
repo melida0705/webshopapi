@@ -44,6 +44,7 @@ class DbOperation
 		for(int i=0;i<4;i++){
 			array_push(rand(1, 6));
 		}
+		return $skocko;
 	}
 	function like($id, $likes){
 		$updatedLike = $likes + 1;
