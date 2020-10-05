@@ -10,6 +10,7 @@
 			$drugi=rand(1, 6);
 			$treci=rand(1, 6);
 			$cetvrti=rand(1,6);
+			$finalni=$prvi+$drugi+$treci+$cetvrti;
 			array_push($skocko,$prvi);
 			array_push($skocko,$drugi);
 			array_push($skocko,$treci);
@@ -18,7 +19,7 @@
 			// for(int i=0;i<4;i++){
 			// 	array_push(rand(1, 6));
 			// }
-			return $skocko;
+			return $finalni;
 		}
 	//function validating all the paramters are available
 	//we will pass the required parameters to this function 
