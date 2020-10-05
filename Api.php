@@ -131,8 +131,8 @@
 				
 				//creating a new record in the database
 				$result = $db->createImage(
-					$_POST['opis'],
-					$_POST['lajkovi'],
+					$_GET['opis'],
+					$_GET['lajkovi'],
 					
 				);
 				
