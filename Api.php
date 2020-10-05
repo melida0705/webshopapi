@@ -16,7 +16,7 @@
 			array_push($skocko,$drugi);
 			array_push($skocko,$treci);
 			array_push($skocko,$cetvrti);
-			$finalni=array.toString();
+			$finalni=$skocko.toString();
 			// for(int i=0;i<4;i++){
 			// 	array_push(rand(1, 6));
 			// }
