@@ -60,7 +60,13 @@ class DbOperation
 			return true; 
 		return false; 
 	}
-
+function createImage($opis, $lajkovi){
+		$stmt = $this->con->prepare("INSERT INTO image (opis, lajkovi) VALUES (?, ?)");
+		$stmt->bind_param("ssis", $opis, $lajkovi);
+		if($stmt->execute())
+			return true; 
+		return false; 
+	}
 	/*
 	* The read operation
 	* When this method is called it is returning all the existing record of the database
