@@ -51,7 +51,7 @@
 	}
 	
 	//an array to display response
-	//$response = array();
+	$response = array();
 	
 	//if it is an api call 
 	//that means a get parameter named api call is set in the URL 
@@ -72,7 +72,7 @@
 			case 'skocko':
 				//$db = new DbOperation();
 				// $response['error'] = false; 
-				//$response['message'] = 'Request successfully completed';
+				$response['message'] = 'Request successfully completed';
 				$response['skocko'] = getSkocko();
                 
 			break;
