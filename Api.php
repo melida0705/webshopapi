@@ -125,36 +125,48 @@
 			case 'createimage':
 				//first check the parameters required for this request are available or not 
 				//isTheseParametersAvailable(array('opis','lajkovi'));
-				
+				if(isset($_GET['opis'])){
+					$db = new DbOperation();
+					if($db->createImage($_GET['opis'], $_GET['lajkovi'])){
+						$response['error'] = false; 
+						$response['message'] = 'Like updated successfully';
+					}else{
+						$response['error'] = true; 
+						$response['message'] = 'Some error occurred please try again';
+					}
+				}else{
+					$response['error'] = true; 
+					$response['message'] = 'Nothing to delete, provide an id please';
+				}
 				//creating a new dboperation object
-				$db = new DbOperation();
+// 				$db = new DbOperation();
 				
-				//creating a new record in the database
-				$result = $db->createImage(
-					$_GET['opis'],
-					$_GET['lajkovi'],
+// 				//creating a new record in the database
+// 				$result = $db->createImage(
+// 					$_GET['opis'],
+// 					$_GET['lajkovi'],
 					
-				);
+// 				);
 				
 
 				//if the record is created adding success to response
-				if($result){
-					//record is created means there is no error
-					$response['error'] = false; 
+// 				if($result){
+// 					//record is created means there is no error
+// 					$response['error'] = false; 
 
-					//in message we have a success message
-					$response['message'] = 'Hero addedd successfully';
+// 					//in message we have a success message
+// 					$response['message'] = 'Hero addedd successfully';
 
-					//and we are getting all the heroes from the database in the response
-					$response['heroes'] = $db->getSlike();
-				}else{
+// 					//and we are getting all the heroes from the database in the response
+// 					$response['heroes'] = $db->getSlike();
+// 				}else{
 
-					//if record is not added that means there is an error 
-					$response['error'] = true; 
+// 					//if record is not added that means there is an error 
+// 					$response['error'] = true; 
 
-					//and we have the error message
-					$response['message'] = 'Some error occurred please try again';
-				}
+// 					//and we have the error message
+// 					$response['message'] = 'Some error occurred please try again';
+// 				}
 				
 			break; 
 			//the READ operation
