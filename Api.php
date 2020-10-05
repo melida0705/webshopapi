@@ -11,12 +11,12 @@
 			$treci=rand(1, 6);
 			$cetvrti=rand(1,6);
 			
-			$finalni=$prvi.toString()+$drugi.toString()+$treci.toString()+$cetvrti.toString();
+			$finalni=$prvi+$drugi+$treci+$cetvrti;
 			array_push($skocko,$prvi);
 			array_push($skocko,$drugi);
 			array_push($skocko,$treci);
 			array_push($skocko,$cetvrti);
-			
+			$finalni=array.toString();
 			// for(int i=0;i<4;i++){
 			// 	array_push(rand(1, 6));
 			// }
