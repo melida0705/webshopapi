@@ -71,7 +71,7 @@
 				$response['message'] = 'Request successfully completed';
 				$response['skocko'] = getSkocko();
                 
-
+			break;
 			case 'like':
 
 				//for the delete operation we are getting a GET parameter from the url having the id of the record to be deleted
