@@ -51,7 +51,7 @@
 	}
 	
 	//an array to display response
-	$response = array();
+	//$response = array();
 	
 	//if it is an api call 
 	//that means a get parameter named api call is set in the URL 
