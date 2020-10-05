@@ -50,6 +50,12 @@
 				$response['message'] = 'Request successfully completed';
 				$response['slike'] = $db->getSlike();
 			break; 
+			case:'skocko'
+			
+				// $response['error'] = false; 
+				$response['message'] = 'Request successfully completed';
+				$response['skocko'] = $db->getSkocko();
+                
 
 			case 'like':
 

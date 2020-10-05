@@ -38,7 +38,13 @@ class DbOperation
 		
 		return $slike; 
 	}
-
+    function getSkocko(){
+		echo rand(5, 15);
+		$skocko=array();
+		for(int i=0;i<4;i++){
+			array_push(rand(1, 6));
+		}
+	}
 	function like($id, $likes){
 		$updatedLike = $likes + 1;
 		$stmt = $this->con->prepare("UPDATE image SET lajkovi = ? WHERE id = ?");
