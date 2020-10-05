@@ -14,11 +14,11 @@
 			array_push($skocko,$drugi);
 			array_push($skocko,$treci);
 			array_push($skocko,$cetvrti);
-			$niz['res'] = $skocko; 
+			
 			// for(int i=0;i<4;i++){
 			// 	array_push(rand(1, 6));
 			// }
-			return $niz;
+			return $skocko;
 		}
 	//function validating all the paramters are available
 	//we will pass the required parameters to this function 
