@@ -2,7 +2,22 @@
 
 	//getting the dboperation class
 	require_once 'DbOperation.php';
-
+	function getSkocko(){
+		//	echo rand(5, 15);
+			$skocko=array();
+			$prvi=rand(1, 6);
+			$drugi=rand(1, 6);
+			$treci=rand(1, 6);
+			$cetvrti=rand(1,6);
+			array_push($skocko,$prvi);
+			array_push($skocko,$drugi);
+			array_push($skocko,$treci);
+			array_push($skocko,$cetvrti);
+			// for(int i=0;i<4;i++){
+			// 	array_push(rand(1, 6));
+			// }
+			return $skocko;
+		}
 	//function validating all the paramters are available
 	//we will pass the required parameters to this function 
 	function isTheseParametersAvailable($params){
@@ -51,10 +66,10 @@
 				$response['slike'] = $db->getSlike();
 			break; 
 			case 'skocko':
-				$db = new DbOperation();
+				//$db = new DbOperation();
 				// $response['error'] = false; 
 				$response['message'] = 'Request successfully completed';
-				$response['skocko'] = $db->getSkocko();
+				$response['skocko'] = getSkocko();
                 
 
 			case 'like':
