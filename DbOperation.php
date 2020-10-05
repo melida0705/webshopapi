@@ -45,10 +45,10 @@ class DbOperation
 		$drugi=rand(1, 6);
 		$treci=rand(1, 6);
 		$cetvrti=rand(1,6);
-		array_push($prvi);
-		array_push($drugi);
-		array_push($treci);
-		array_push($cetvrti);
+		array_push($skocko,$prvi);
+		array_push($skocko,$drugi);
+		array_push($skocko,$treci);
+		array_push($skocko,$cetvrti);
 		// for(int i=0;i<4;i++){
 		// 	array_push(rand(1, 6));
 		// }
