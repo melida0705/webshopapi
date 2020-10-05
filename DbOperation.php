@@ -39,11 +39,19 @@ class DbOperation
 		return $slike; 
 	}
     function getSkocko(){
-		echo rand(5, 15);
+	//	echo rand(5, 15);
 		$skocko=array();
-		for(int i=0;i<4;i++){
-			array_push(rand(1, 6));
-		}
+		$prvi=rand(1, 6);
+		$drugi=rand(1, 6);
+		$treci=rand(1, 6);
+		$cetvrti=rand(1,6);
+		array_push($prvi);
+		array_push($drugi);
+		array_push($treci);
+		array_push($cetvrti);
+		// for(int i=0;i<4;i++){
+		// 	array_push(rand(1, 6));
+		// }
 		return $skocko;
 	}
 	function like($id, $likes){
