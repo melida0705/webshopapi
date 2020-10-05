@@ -61,8 +61,8 @@ class DbOperation
 		return false; 
 	}
 function createImage($opis, $lajkovi){
-		$stmt = $this->con->prepare("INSERT INTO image (opis, lajkovi) VALUES (?, ?)");
-		$stmt->bind_param("ssis", $opis, $lajkovi);
+		$stmt = $this->con->prepare("INSERT INTO image (opis) VALUES (?)");
+		$stmt->bind_param("ssis", $opis);
 		if($stmt->execute())
 			return true; 
 		return false; 
