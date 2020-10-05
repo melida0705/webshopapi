@@ -124,7 +124,7 @@
 			break; 
 			case 'createimage':
 				//first check the parameters required for this request are available or not 
-				isTheseParametersAvailable(array('opis','lajkovi'));
+				//isTheseParametersAvailable(array('opis','lajkovi'));
 				
 				//creating a new dboperation object
 				$db = new DbOperation();
