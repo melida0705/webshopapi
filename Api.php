@@ -72,7 +72,7 @@
 			case 'skocko':
 				//$db = new DbOperation();
 				// $response['error'] = false; 
-				$response['message'] = 'Request successfully completed';
+				//$response['message'] = 'Request successfully completed';
 				$response['skocko'] = getSkocko();
                 
 			break;
