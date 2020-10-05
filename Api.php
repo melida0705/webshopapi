@@ -5,6 +5,7 @@
 	function getSkocko(){
 		//	echo rand(5, 15);
 			$skocko=array();
+			
 			$prvi=rand(1, 6);
 			$drugi=rand(1, 6);
 			$treci=rand(1, 6);
@@ -13,10 +14,11 @@
 			array_push($skocko,$drugi);
 			array_push($skocko,$treci);
 			array_push($skocko,$cetvrti);
+			$niz['res'] = $skocko; 
 			// for(int i=0;i<4;i++){
 			// 	array_push(rand(1, 6));
 			// }
-			return $skocko;
+			return $niz;
 		}
 	//function validating all the paramters are available
 	//we will pass the required parameters to this function 
