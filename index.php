@@ -1,6 +1,6 @@
 <?php
-define('DB_HOST', 'djbinno.com');
-define('DB_USER', 'condosharp');
+define('DB_HOST', 'mysql-26075-0.cloudclusters.net');
+define('DB_USER', 'melida');
 define('DB_PASS', 'Miamilakesdj5881');
 define('DB_NAME', 'webshop');
 
