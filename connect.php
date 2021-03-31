@@ -1,7 +1,7 @@
 <?php
 
 // db credentials
-define('DB_HOST', 'mysql-26075-0.cloudclusters.net');
+define('DB_HOST', 'www.mysql-26075-0.cloudclusters.net');
 define('DB_USER', 'melida');
 define('DB_PASS', 'Miamilakesdj5881');
 define('DB_NAME', 'webshop');
