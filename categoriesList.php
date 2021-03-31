@@ -5,17 +5,17 @@
 require 'connect.php';
     
 $images = [];
-$sql = "SELECT * FROM image";
+$sql = "SELECT * FROM category";
 
 if($result = mysqli_query($con,$sql))
 {
   $cr = 0;
   while($row = mysqli_fetch_assoc($result))
   {
-    $images[$cr]['id']    = $row['id'];
-    $images[$cr]['url']    = $row['url'];
-    $images[$cr]['opis']    = $row['opis'];
-    $images[$cr]['lajkovi']    = $row['lajkovi'];
+    $images[$cr]['category_id']    = $row['category_id'];
+    $images[$cr]['category_name']    = $row['category_name'];
+    $images[$cr]['category_image']    = $row['category_image'];
+ 
   
     $cr++;
   }
