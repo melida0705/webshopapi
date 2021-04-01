@@ -1,10 +1,10 @@
 <?php
 
 // db credentials
-define('DB_HOST', '163.123.183.93');
-define('DB_USER', 'melida');
+define('DB_HOST', 'www.000webhost.com');
+define('DB_USER', 'id16507163_melida');
 define('DB_PASS', 'Miamilakesdj5881');
-define('DB_NAME', 'webshop');
+define('DB_NAME', 'id16507163_webshop');
 
 // Connect with the database.
 function connect()
